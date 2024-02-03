@@ -8,7 +8,7 @@ function renderBoard() {
   let dateCopyright = todayDate();
   document.querySelector(
     ".copyright"
-  ).innerHTML = `Copyright &copy; ${dateCopyright} CAD project team`;
+  ).innerHTML = `Copyright &copy; ${dateCopyright} Community App Project Team`;
 }
 
 // executed with loading

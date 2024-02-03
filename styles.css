@@ -5,6 +5,7 @@
   padding: 0;
 }
 
+/* Page layout */
 .container {
   display: grid;
   grid-template-rows: 4rem 1fr 3rem;
@@ -16,15 +17,53 @@
   height: 100vh;
 }
 
+/* Header */
 .header {
   grid-area: header;
   background-color: rgb(251, 251, 249);
 }
+
+/* Main */
+.content {
+  padding-left: 3rem;
+  grid-area: content;
+}
+
+.deadline-cad {
+  margin: 1rem;
+}
+
+.program-course-deadline {
+  margin: 2rem 0;
+}
+
+.prog-deadline {
+  margin: 1rem 0;
+}
+
+/* Sidebar */
 .sidebar {
   grid-area: sidebar;
   background-color: rgb(185, 184, 184);
 }
 
+.side-level1 {
+  margin-left: 0.5rem;
+}
+
+.side-level2 {
+  margin-left: 1rem;
+}
+
+.side-level3 {
+  margin-left: 1.5rem;
+}
+
+.side-level4 {
+  margin-left: 2rem;
+}
+
+/* Footer */
 .footer {
   grid-area: footer;
   background-color: rgb(218, 223, 218);
@@ -34,7 +73,4 @@
   color: black;
   justify-content: center;
   align-items: center;
-}
-.content {
-  grid-area: content;
 }
