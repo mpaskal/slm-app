@@ -22,6 +22,10 @@
   grid-area: header;
   background-color: rgb(251, 251, 249);
 }
+.header button{
+  float: right;
+  margin:auto;
+}
 
 /* Main */
 .content {

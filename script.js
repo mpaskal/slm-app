@@ -15,3 +15,14 @@ function renderBoard() {
 (function () {
   renderBoard();
 })();
+
+//When student login clicked
+document.addEventListener("DOMContentLoaded", function() {
+  var studentLoginButton = document.getElementById("loginButton");
+  studentLoginButton.addEventListener("click", function() {
+    studentLogin();
+  });
+function studentLogin() {
+    alert("Student login clicked!");
+  }
+});
