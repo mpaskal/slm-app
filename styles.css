@@ -1,3 +1,8 @@
+:root {
+  --frame-background: rgb(232 249 232);
+  --frame-color: rgb(53, 54, 52);
+}
+
 * {
   box-sizing: border-box;
   font-family: Lora, sans-serif;
@@ -19,12 +24,73 @@
 
 /* Header */
 .header {
+  align-items: center;
+  background-color: var(--frame-background);
+  color: var(--frame-color);
+  display: flex;
   grid-area: header;
-  background-color: rgb(251, 251, 249);
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+
+.nav-home {
+  display: flex;
+  float: left;
+  position: static;
+}
+
+.header img {
+  border-radius: 50%;
+  float: left;
+  height: 50px;
+  margin: 0.5rem;
+  width: 50px;
+}
+
+.header h2 {
+  align-items: center;
+  display: flex;
+  position: static;
+}
+
+.navbar-links {
+  position: static;
+}
+
+.navbar-links a {
+  animation: none;
+  color: var(--frame-color);
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+.navbar-links a.active,
+.navbar-links a:hover {
+  color: #0d100e;
+  text-decoration: underline;
+}
+
+.navbar-links li {
+  display: inline;
+  list-style: none;
+}
+
+.toggle-btn {
+  display: none;
+}
+
+.close-toggle-btn {
+  display: none;
 }
 
 /* Main */
 .content {
+  color: rgb(51, 51, 51);
+  background-color: rgb(255, 255, 255);
   padding-left: 3rem;
   grid-area: content;
 }
@@ -43,34 +109,46 @@
 
 /* Sidebar */
 .sidebar {
+  background-color: var(--frame-background);
+  color: var(--frame-color);
   grid-area: sidebar;
-  background-color: rgb(185, 184, 184);
+  padding-left: 2rem;
+  padding-top: 2rem;
 }
 
-.side-level1 {
-  margin-left: 0.5rem;
+.sidebar-links {
+  position: static;
 }
 
-.side-level2 {
-  margin-left: 1rem;
+.sidebar-links a {
+  animation: none;
+  color: var(--frame-color);
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 15px 20px;
+  text-decoration: none;
 }
 
-.side-level3 {
-  margin-left: 1.5rem;
+.sidebar-links a.active,
+.sidebar-links a:hover {
+  color: #0d100e;
+  text-decoration: underline;
 }
 
-.side-level4 {
-  margin-left: 2rem;
+.sidebar-links li {
+  list-style: none;
+  padding-top: 2rem;
 }
 
 /* Footer */
 .footer {
-  grid-area: footer;
-  background-color: rgb(218, 223, 218);
-  bottom: 0;
-  display: flex;
-  width: auto;
-  color: black;
-  justify-content: center;
   align-items: center;
+  background-color: var(--frame-background);
+  color: var(--frame-color);
+  bottom: 0;
+  color: rgb(51, 51, 51);
+  display: flex;
+  grid-area: footer;
+  justify-content: center;
+  width: auto;
 }
