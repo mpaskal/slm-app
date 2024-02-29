@@ -14,7 +14,7 @@
 .container {
   display: grid;
   grid-template-rows: 4rem 1fr 3rem;
-  grid-template-columns: 15rem auto;
+  grid-template-columns: 14rem auto;
   grid-template-areas:
     "header  header"
     "sidebar content"
@@ -111,9 +111,21 @@
 .sidebar {
   background-color: var(--frame-background);
   color: var(--frame-color);
+  display: none;
   grid-area: sidebar;
   padding-left: 2rem;
   padding-top: 2rem;
+}
+
+.close-sidebar-btn {
+  cursor: pointer;
+  float: right;
+  margin-right: 1rem;
+  margin-top: -2.4rem;
+}
+
+.update-title {
+  margin-top: 1.3rem;
 }
 
 .sidebar-links {
